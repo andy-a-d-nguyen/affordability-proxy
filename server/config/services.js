@@ -41,24 +41,24 @@
 */
 
 module.exports = {
-  service1: {
-    api: 'FIX_ME',
-    url: 'http://localhost:3001',
-    bundle: 'app.js',
+  service1: { // main gallery
+    api: '/listings/:id/homesData',
+    url: 'http://127.0.0.1:8040',
+    bundle: '/gallery/:id/bundle.js',
   },
-  service2: {
-    api: 'FIX_ME',
-    url: 'http://localhost:3002',
-    bundle: 'app.js',
+  service2: { // image carousel
+    api: '/listings/:id/listing',
+    url: 'http://127.0.0.1:8030',
+    bundle: '/carousel/:id/bundle.js',
   },
-  service3: {
-    api: 'FIX_ME',
-    url: 'http://localhost:3003',
-    bundle: 'app.js',
+  service3: { // reviews
+    api: '/listings/:id/neighborhood*',
+    url: 'http://127.0.0.1:8010',
+    bundle: '/reviews/:id/bundle.js',
   },
-  service4: {
-    api: 'FIX_ME',
-    url: 'http://localhost:3004',
-    bundle: 'app.js',
+  service4: { // affordability
+    api: '/listings/:id/db',
+    url: 'http://127.0.0.1:8020/',
+    bundle: '/mortgage/:id/bundle.js',
   },
 };
