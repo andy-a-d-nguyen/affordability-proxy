@@ -41,16 +41,16 @@
 */
 
 module.exports = {
-  service1: { // main gallery
-    api: '/listings/:id/homesData',
-    url: 'http://3.14.147.243',
-    bundle: '/gallery/:id/bundle.js',
-  },
-  service2: { // image carousel
-    api: '/listings/:id/listing',
-    url: 'http://ec2-52-53-150-9.us-west-1.compute.amazonaws.com:8030',
-    bundle: '/carousel/:id/bundle.js',
-  },
+  // service1: { // main gallery
+  //   api: '/listings/:id/homesData',
+  //   url: 'http://3.14.147.243',
+  //   bundle: '/gallery/:id/bundle.js',
+  // },
+  // service2: { // image carousel
+  //   api: '/listings/:id/listing',
+  //   url: 'http://ec2-52-53-150-9.us-west-1.compute.amazonaws.com:8030',
+  //   bundle: '/carousel/:id/bundle.js',
+  // },
   service3: { // reviews
     api: '/listings/:id/neighborhood*',
     url: 'http://3.138.140.28:8010/',
