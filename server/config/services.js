@@ -59,6 +59,6 @@ module.exports = {
   service4: { // affordability
     api: '/listings/:id/db',
     url: 'http://ec2-3-101-152-172.us-west-1.compute.amazonaws.com:8020',
-    bundle: '/mortgage/:id/bundle.js',
+    bundle: 'https://affordabilitycomponent.s3-us-west-1.amazonaws.com/bundle.js',
   },
 };
