@@ -1,7 +1,14 @@
+const createCompress = require('compress-brotli');
+const v8 = require('v8');
 const express = require('express');
 const morgan = require('morgan');
 const path = require('path');
 const router = require('./router');
+
+const { compress, decompress } = createCompress({
+  serialize: v8.serialize,
+  deserialize: v8.deserialize,
+});
 
 const PUBLIC_DIR = path.resolve(__dirname, '..', 'public');
 const app = express();
