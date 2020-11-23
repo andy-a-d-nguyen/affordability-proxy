@@ -53,7 +53,7 @@ module.exports = {
   },
   service3: { // reviews
     api: '/listings/:id/neighborhood*',
-    url: 'http://ec2-3-101-139-200.us-west-1.compute.amazonaws.com:8010',
+    url: 'http://3.138.140.28:8010/',
     bundle: '/reviews/:id/bundle.js',
   },
   service4: { // affordability
