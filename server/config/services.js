@@ -41,20 +41,20 @@
 */
 
 module.exports = {
-  // service1: { // main gallery
-  //   api: '/listings/:id/homesData',
-  //   url: 'http://3.14.147.243',
-  //   bundle: '/gallery/:id/bundle.js',
-  // },
-  // service2: { // image carousel
-  //   api: '/listings/:id/listing',
-  //   url: 'http://ec2-52-53-150-9.us-west-1.compute.amazonaws.com:8030',
-  //   bundle: '/carousel/:id/bundle.js',
-  // },
+  service1: { // main gallery
+    api: '/listings/:id/homesData',
+    url: 'http://3.14.147.243',
+    bundle: 'https://s3-us-west-1.amazonaws.com/hackreactor.fec.trulia.photos/bundle.js',
+  },
+  service2: { // image carousel
+    api: '/listings/:id/listing',
+    url: 'http://ec2-52-53-150-9.us-west-1.compute.amazonaws.com:8030',
+    bundle: 'https://s3-us-west-1.amazonaws.com/fec.similarhomes/bundle.js',
+  },
   service3: { // reviews
     api: '/listings/:id/neighborhood*',
     url: 'http://3.138.140.28:8010/',
-    bundle: '/reviews/:id/bundle.js',
+    bundle: 'https://reviews-component-fec.s3-us-west-1.amazonaws.com/bundle.js',
   },
   service4: { // affordability
     api: '/listings/:id/db',
