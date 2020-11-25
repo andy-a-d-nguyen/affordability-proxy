@@ -42,12 +42,12 @@
 
 module.exports = {
   service1: { // main gallery
-    api: '/listings/:id/*',
+    api: '/listings/:id/homesData',
     url: 'http://3.14.147.243:8040',
     bundle: 'https://s3-us-west-1.amazonaws.com/hackreactor.fec.trulia.photos/bundle.js',
   },
   service2: { // image carousel
-    api: '/listings/:id/*',
+    api: '/listings/:id/listing',
     url: 'http://ec2-52-53-150-9.us-west-1.compute.amazonaws.com:8030',
     bundle: 'https://s3-us-west-1.amazonaws.com/fec.similarhomes/bundle.js',
   },
