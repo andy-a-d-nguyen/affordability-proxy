@@ -43,7 +43,7 @@
 module.exports = {
   service1: { // main gallery
     api: '/listings/:id/homesData',
-    url: 'http://3.14.147.243',
+    url: 'http://3.14.147.243:8040',
     bundle: 'https://s3-us-west-1.amazonaws.com/hackreactor.fec.trulia.photos/bundle.js',
   },
   service2: { // image carousel
