@@ -1,5 +1,9 @@
-.trulia{
+.trulia {
   display: block;
   text-align: center !important;
   max-width: 992px !important;
+}
+
+#truliaImageCentering {
+  text-align: center !important;
 }
