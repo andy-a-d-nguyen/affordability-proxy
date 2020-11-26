@@ -1,5 +1,5 @@
 .trulia{
   display: block;
-  margin: 0 auto;
-  max-width: 992px;
+  text-align: center !important;
+  max-width: 992px !important;
 }
