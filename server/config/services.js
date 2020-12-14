@@ -41,24 +41,24 @@
 */
 
 module.exports = {
-  service1: { // main gallery
-    api: '/listings/:id/homesData',
-    url: 'http://54.151.124.17:8040',
-    bundle: 'https://s3-us-west-1.amazonaws.com/hackreactor.fec.trulia.photos/bundle.js',
-  },
-  service2: { // image carousel
-    api: '/listings/:id/listing',
-    url: 'http://13.56.19.216:8030',
-    bundle: 'https://s3-us-west-1.amazonaws.com/fec.similarhomes/bundle.js',
-  },
-  service3: { // reviews
-    api: '/listings/:id/neighborhood*',
-    url: 'http://3.138.140.28:8010/',
-    bundle: 'https://reviews-component-fec.s3-us-west-1.amazonaws.com/bundle.js',
-  },
+  // service1: { // main gallery
+  //   api: '/listings/:id/homesData',
+  //   url: 'http://54.151.124.17:8040',
+  //   bundle: 'https://s3-us-west-1.amazonaws.com/hackreactor.fec.trulia.photos/bundle.js',
+  // },
+  // service2: { // image carousel
+  //   api: '/listings/:id/listing',
+  //   url: 'http://13.56.19.216:8030',
+  //   bundle: 'https://s3-us-west-1.amazonaws.com/fec.similarhomes/bundle.js',
+  // },
+  // service3: { // reviews
+  //   api: '/listings/:id/neighborhood*',
+  //   url: 'http://3.138.140.28:8010/',
+  //   bundle: 'https://reviews-component-fec.s3-us-west-1.amazonaws.com/bundle.js',
+  // },
   service4: { // affordability
-    api: '/listings/:id/db',
-    url: 'http://ec2-3-101-152-172.us-west-1.compute.amazonaws.com:8020',
-    bundle: 'https://affordabilitycomponent.s3-us-west-1.amazonaws.com/bundle.js',
+    api: '/listings/:id/mortgage',
+    url: 'http://localhost:8020',
+    bundle: '/listings/:id/mortgage/bundle.js',
   },
 };
