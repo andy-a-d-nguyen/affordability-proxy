@@ -58,7 +58,7 @@ module.exports = {
   // },
   service4: { // affordability
     api: '/listings/:id/mortgage',
-    url: 'http://localhost:8020',
+    url: 'http://13.56.200.39:8020/',
     bundle: '/listings/:id/mortgage/bundle.js',
   },
 };
