@@ -8,8 +8,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server",
-    "start:dev": "nodemon server"
+    "server-prod": "node server",
+    "server-dev": "nodemon server"
   },
   "keywords": [],
   "author": "",
@@ -18,7 +18,8 @@
     "compress-brotli": "^1.2.2",
     "express": "^4.17.1",
     "http-proxy-middleware": "^1.0.6",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "newrelic": "^7.0.2"
   },
   "devDependencies": {
     "eslint": "^7.13.0",

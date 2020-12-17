@@ -14,13 +14,13 @@ const router = Router();
 //   changeOrigin: true,
 // }));
 
-// router.use('/service2.js', createProxyMiddleware({
-//   target: service2.url,
-//   pathRewrite: {
-//     '^.*': service2.bundle,
-//   },
-//   changeOrigin: true,
-// }));
+router.use('/service2.js', createProxyMiddleware({
+  target: service2.url,
+  pathRewrite: {
+    '^.*': service2.bundle,
+  },
+  changeOrigin: true,
+}));
 
 // router.use('/service3.js', createProxyMiddleware({
 //   target: service3.url,

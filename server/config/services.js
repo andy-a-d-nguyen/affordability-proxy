@@ -46,19 +46,25 @@ module.exports = {
   //   url: 'http://54.151.124.17:8040',
   //   bundle: 'https://s3-us-west-1.amazonaws.com/hackreactor.fec.trulia.photos/bundle.js',
   // },
-  // service2: { // image carousel
-  //   api: '/listings/:id/listing',
-  //   url: 'http://13.56.19.216:8030',
-  //   bundle: 'https://s3-us-west-1.amazonaws.com/fec.similarhomes/bundle.js',
-  // },
+  service2: { // image carousel
+    api: 'carousel/listing/:id',
+    url: 'http://54.183.243.60:8030',
+    // bundle: 'https://twola.s3-us-west-1.amazonaws.com/bundle.js',
+    // bundle: 'bundle.js',
+    bundle: 'carousel/listing/:id/bundle.js',
+  },
   // service3: { // reviews
   //   api: '/listings/:id/neighborhood*',
   //   url: 'http://3.138.140.28:8010/',
   //   bundle: 'https://reviews-component-fec.s3-us-west-1.amazonaws.com/bundle.js',
   // },
   service4: { // affordability
+    // api: '/listings/:id/mortgage',
     api: '/listings/:id/mortgage',
-    url: 'http://localhost:8020',
-    bundle: '/listings/:id/mortgage/bundle.js',
+    url: 'http://13.56.200.39:8020',
+    // url: 'http://localhost:8020',
+    // bundle: '/listings/:id/mortgage/bundle.js',
+    bundle: '/listings/:id/bundle.js',
+    // bundle: 'bundle.js',
   },
 };
