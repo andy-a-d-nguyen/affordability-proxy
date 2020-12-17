@@ -59,7 +59,6 @@ module.exports = {
   //   bundle: 'https://reviews-component-fec.s3-us-west-1.amazonaws.com/bundle.js',
   // },
   service4: { // affordability
-    // api: '/listings/:id/mortgage',
     api: '/listings/:id/mortgage',
     url: 'http://13.56.200.39:8020',
     // url: 'http://localhost:8020',
