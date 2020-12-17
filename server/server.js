@@ -14,6 +14,7 @@ const PUBLIC_DIR = path.resolve(__dirname, '..', 'public');
 const app = express();
 
 app.use(morgan('dev'));
+app.use('/', express.static(PUBLIC_DIR));
 app.use('/listings/:id', express.static(PUBLIC_DIR));
 // app.use('/listings/:id/mortgage', express.static(PUBLIC_DIR));
 
